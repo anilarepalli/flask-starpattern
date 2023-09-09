@@ -1,15 +1,18 @@
 def logic(choice, value):
-    result = ''
-    if choice == 1:
+    result = ""
+    if int(choice) == 1:
         n = int(value)
         for i in range(n):
             for j in range(i, n):
                 result = result + "\n"
+                print(result)
             for j in range(i + 1):
-                result = result + "*"
+                result = result + '*'
+                print(result)
             result = result + "\n"
+            print(result)
 
-    elif choice == 2:
+    elif int(choice) == 2:
         n = int(input("Enter value"))
         for i in range(n - 1):
             for j in range(i + 1):
@@ -30,7 +33,7 @@ def logic(choice, value):
                 print('*', end=' ')
             print()
 
-    elif choice == 3:
+    elif int(choice) == 3:
         n = int(input("Enter value"))
         for i in range(n - 1):
             for j in range(i + 1):
@@ -72,28 +75,28 @@ def logic(choice, value):
                 print('*', end=' ')
             print()
 
-    elif choice == 4:
+    elif int(choice) == 4:
         n = int(input("Enter value"))
         for i in range(n):
             for j in range(n):
                 print('*', end=' ')
             print()
 
-    elif choice == 5:
+    elif int(choice) == 5:
         n = int(input("Enter value"))
         for i in range(n):
             for j in range(i + 1):
                 print('*', end=' ')
             print()
 
-    elif choice == 6:
+    elif int(choice) == 6:
         n = int(input("Enter value"))
         for i in range(n):
             for j in range(2 * n):
                 print('*', end=' ')
             print()
 
-    elif choice == 7:
+    elif int(choice) == 7:
         n = int(input("Enter value"))
         for i in range(n - 1):
             for j in range(i, n - 1):

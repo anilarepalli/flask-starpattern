@@ -11,7 +11,7 @@ def shape():
     choice = request.form['choice']
     value = request.form['value']
     result = logic(choice,value)
-    return render_template("index.html",choice=choice,value=value,result=result)
+    return render_template("index.html",result=result)
 
 if __name__ == '__main__':
     app.run(debug=True)
